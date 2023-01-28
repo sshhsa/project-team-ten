@@ -1,26 +1,12 @@
-@import './addition/core-styles';
-@import './addition/variables';
 @import './common.scss';
+@import './vars';
+@import './base.scss';
 
-@import './main/_about-our-hotel.scss';
-@import './main/_about-our-rest.scss';
-@import './main/_contacts.scss';
-@import './main/_details-hotel.scss';
-@import './main/_details-rest.scss';
-@import './main/_header';
-@import './main/_hero';
-
-@import './restaurant/_about-our-kitchen.scss';
-@import './restaurant/_header.scss';
-@import './restaurant/_hero.scss';
-@import './restaurant/_menu.scss';
-
-@import './hotel/_1-room-2-adult.scss';
-@import './hotel/_1-room-3-adult.scss';
-@import './hotel/_1-room-luxe-2-adult.scss';
-@import './hotel/_header.scss';
-@import './hotel/_hero.scss';
-
-@import './room-hotel/_amenities.scss';
-@import './room-hotel/_header.scss';
-@import './room-hotel/_hero.scss';
+@import './header';
+@import './main/hero.css';
+@import './main/about-our-rest.css';
+@import './main/details-rest.css';
+@import './main/about-our-hotel.css';
+@import './main/details-hotel.css';
+@import './main/contacts.css';
+@import './footer';
