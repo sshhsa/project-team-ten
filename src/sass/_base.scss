@@ -16,8 +16,6 @@ body {
 
 img {
     display: block;
-    width: 100%;
-    height: auto;
 }
 
 ul {
@@ -53,13 +51,19 @@ p {
   overflow: hidden;
 }
 
-/* mobile screen */
 
 .container {
-      max-width: 414px;
-      margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* mobile screen */
+@media screen and (max-width: 1023.98px) {
+  .container {
+    width: 100%;
+    max-width: 414px;
+  }
 }
 
 /* tablet screen */
