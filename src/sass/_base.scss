@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -55,13 +55,11 @@ p {
 
 /* mobile screen */
 
-@media screen and (min-width:414px) {
 .container {
-      width: 414px;
+      max-width: 414px;
       margin: 0 auto;
       padding-left: 15px;
       padding-right: 15px;
-}
 }
 
 /* tablet screen */
