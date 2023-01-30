@@ -3,14 +3,14 @@
   padding-bottom: 32px;
 }
 
-.container-menu {
+/*.container-menu {
   min-width: 320px;
   max-width: 414px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .resrotaunt {
   background-color: var(--primary-bg-color-light);
@@ -25,7 +25,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 32px;
-  padding-left: 15px;
+  
   font-family: 'TimesNewRoman', Times, serif;
   font-size: 32px;
   font-weight: 700;
@@ -42,7 +42,7 @@ table td {
 
 table {
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   /*width: 411px;*/
 }
 
@@ -52,7 +52,7 @@ table {
   font-family: var(--primary-font);
   line-height: 1.2;
   font-weight: 700;
-  width: 65px;
+ width: 65px;
 }
 
 .massa {
@@ -76,7 +76,7 @@ table {
 .composition {
   font-size: 10px;
   line-height: 1.2;
-  width: 225px;
+ /* width: 225px;*/
   font-weight: 400;
   font-family: var(--primary-font);
 }
@@ -95,7 +95,7 @@ table {
   padding: 18px 38px;
 
   display: block;
-  min-width: 236px;
+ /* min-width: 236px;*/
   min-height: 48px;
   margin: 0 auto;
 
@@ -109,15 +109,21 @@ table {
 }
 
 @media screen and (min-width: 1024px) {
-  /*table {
-        width: 444px;
-    }*/
+.composition {
+     width: 225px;
+}
+.price {
 
-  .container-menu {
-    max-width: 1024px;
+  width: 107px;
+}
+.massa {
+  width: 79px;
+}
+  .container {
+    width: 1024px;
   }
-
-  .container-menu .book-table-modal-window {
+   
+  .container .book-table-modal-window {
     margin-right: 0;
   }
 
@@ -125,7 +131,7 @@ table {
     display: flex;
     justify-content: space-between;
 
-    flex-basis: 430px;
+   /* flex-basis: 430px;*/
   }
 
   .resrotaunt {
@@ -178,10 +184,22 @@ table {
 }
 
 @media screen and (min-width: 1280px) {
-  .container-menu {
+  .name-list {
+width: 291px;
+  }
+  .container {
     width: 1280px;
   }
+.price {
 
+  width: 69px;
+}
+.massa {
+  width: 164px;
+}
+.composition {
+  width: 291px;
+}
   .section {
     padding-top: 58px;
     padding-bottom: 60px;
@@ -197,6 +215,7 @@ table {
 
   .name-list {
     font-size: 16px;
+    width: 257px;
   }
 
   .composition {
@@ -206,4 +225,16 @@ table {
   table td {
     padding-bottom: 11px;
   }
+     .position-table-tablet {
+       display: flex;
+  
+       flex-wrap: wrap;
+       justify-content: space-between;
+     }
+         .container-group {
+           display: flex;
+           justify-content: space-between;
+    
+           /* flex-basis: 430px;*/
+         }
 }
