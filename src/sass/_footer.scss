@@ -2,3 +2,118 @@
 @import './vars';
 @import './base';
 @import './fonts';
+
+.ft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+
+    background-color: var(--primary-bg-color-dark);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+.ft-title-cont {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;    
+}
+.footer-title {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+    color: var(--accent-color-theme-dark);
+    text-transform: uppercase;
+}
+nav {
+    margin-bottom: 32px;
+}
+
+.foot-nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-theme-dark); 
+}
+.soc-media-icon {
+   fill: var(--accent-color-theme-dark);
+}
+
+.nav-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.soc-foot ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.soc-foot-item:not(:last-child) {
+    margin-right: 20px;
+}
+.soc-foot-title {
+    display: none;
+}
+
+
+/* tablet screen styles*/
+@media screen and (min-width:1024px) {
+    .footer-title {
+        font-size: 64px;
+        line-height: 1.1;
+    }
+    .ft {
+        justify-content: space-evenly;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .soc-foot-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 12px;
+
+        border: 0.5px solid var(--accent-color-theme-dark);
+        border-radius: 2px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--accent-color-theme-dark);
+    }
+    .soc-foot-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .soc-foot-item {
+        width: 144px;
+        height: 40px;
+    }
+    .soc-media-icon {
+        margin-left: auto;
+    }
+    .soc-foot-title {
+        display: block;
+    }
+    .soc-foot ul {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .soc-foot {
+        margin-right: 75px;
+    }
+    .nav-soc {
+        display: flex;
+    }
+    .nav-soc nav {
+        margin-right: 137px 
+    }
+  }
