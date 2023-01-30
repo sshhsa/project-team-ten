@@ -1,6 +1,7 @@
 @import './common';
 @import './vars';
 @import './base';
+@import './fonts';
 
 .ft {
     display: flex;
@@ -113,6 +114,6 @@ nav {
         display: flex;
     }
     .nav-soc nav {
-        margin-right: 137px
+        margin-right: 137px 
     }
   }
