@@ -11,6 +11,12 @@
 
   color: var(--subtle-text-color);
 }
+@media screen and (min-width: 1024px) {
+  .hotel-room-desc {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
 .hotel-room-logo {
   margin-bottom: 32px;
   font-family: var(--logo-font);
@@ -22,6 +28,13 @@
 
   color: var(--logo-color-dark);
 }
+@media screen and (min-width: 1024px) {
+  .hotel-room-logo {
+    margin-bottom: 62px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
 .hotel-room-title {
   margin-bottom: 12px;
   font-family: var(--secondary-font);
@@ -31,6 +44,13 @@
   letter-spacing: 0.05em;
 
   color: var(--secondary-text-color-theme-light);
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-title {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 .hotel-room-title-upper {
   text-transform: uppercase;
@@ -45,14 +65,32 @@
 
   color: var(--primary-text-color-theme-light);
 }
+@media screen and (min-width: 1024px) {
+  .hotel-room-text {
+    max-width: 439px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-desc-section {
+    display: flex;
+  }
+}
 .image {
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
-.room-img {
+.hotel-room-img {
   margin-left: auto;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-img {
+    margin-left: 42px;
+    transform: translateY(-10%);
+  }
 }
 .amenities-img {
   margin-bottom: 20px;
@@ -63,8 +101,41 @@
   width: 32px;
   height: 32px;
 }
-.hotel-arrow-icon {
-  cursor: pointer;
+.hotel-room-slider {
+  margin-bottom: 20px;
+  display: flex;
+}
+@media screen and (max-width: 1023.98px) {
+  .hotel-room-slider {
+    transform: translateX(-38%);
+  }
+}
+.hotel-room-slider-item:first-child {
+  margin-right: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-slider-item:first-child {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-arrows {
+    order: 1;
+  }
 }
 .hotel-arrow-icon + .hotel-arrow-icon {
   margin-left: 32px;
@@ -92,6 +163,11 @@
 }
 .hotel-room-btn-list {
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-btn-list {
+    margin-left: auto;
+  }
 }
 .hotel-room-btn-item:first-child {
   margin-bottom: 16px;
