@@ -1,0 +1,212 @@
+.details-rest {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 414px;
+  height: 735px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/main/main_det_rest/main_det_rest_mob_back_414_1x.jpg);
+
+  .container {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023.98px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023.98px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
+  .details-rest {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_det_rest/main_det_rest_mob_back_414_2x.jpg);
+  }
+}
+
+.logo {
+  margin-left: 125px;
+  margin-bottom: 12px;
+
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  color: var(--primary-text-color-theme-dark);
+  font-family: var(--logo-font);
+}
+
+.details-rest__title {
+  margin-left: 125px;
+  margin-bottom: 20px;
+
+  color: var(--primary-text-color-theme-dark);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.details-rest__text {
+  margin-left: 125px;
+  margin-bottom: 48px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.details-rest__img {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 80px;
+  max-width: 274px;
+  width: 100%;
+}
+
+.details-rest__buttons-list {
+  text-align: center;
+
+  .point:not(:last-child) {
+    margin-bottom: 16;
+  }
+}
+
+.details-rest__button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  width: 236px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color-theme-dark);
+  cursor: pointer;
+
+  transition: border-color var(--animation), background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color-theme-dark);
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.76)
+      ),
+      url(/src/images/main/main_det_rest/main_det_rest_tab_back_1024_1x.jpg);
+
+    height: 620px;
+    max-width: 1024px;
+    background-size: cover;
+
+    .container {
+      padding-top: 48px;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    .details-rest {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.76),
+          rgba(0, 0, 0, 0.76)
+        ),
+        url(/src/images/main/main_det_rest/main_det_rest_tab_back_1024_2x.jpg);
+    }
+  }
+
+  .logo {
+    margin-left: 231px;
+
+    font-size: 64px;
+    line-height: 1.08;
+  }
+
+  .details-rest__title {
+    margin-left: 231px;
+
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .details-rest__text {
+    margin-left: 231px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    width: 610px;
+  }
+
+  .сhange-position-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: flex-end;
+  }
+
+  .details-rest__img {
+    margin-left: 29px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .details-rest {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_det_rest/main_det_rest_desk_back_1280_1x.jpg);
+
+    max-width: 1280px;
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .details-rest {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/main/main_det_rest/main_det_rest_desk_back_1280_2x.jpg);
+    }
+  }
+
+  .logo {
+    margin-left: 253px;
+  }
+
+  .details-rest__title {
+    margin-left: 253px;
+  }
+
+  .details-rest__text {
+    margin-left: 253px;
+  }
+}
