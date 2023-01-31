@@ -1,7 +1,19 @@
+img {
+  max-width: 100%;
+}
 .two-adults-lux-section {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: var(--primary-bg-color-light);
+  @media screen and (min-width: 1024px) {
+    padding-top: 62px;
+    padding-bottom: 104px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 112px;
+  }
 }
 .hotel-room-desc {
   margin-bottom: 8px;
@@ -10,9 +22,9 @@
   line-height: calc(23 / 20);
 
   color: var(--subtle-text-color);
-}
-@media screen and (min-width: 1024px) {
-  .hotel-room-desc {
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4px;
     font-size: 32px;
     line-height: calc(37 / 32);
   }
@@ -27,12 +39,13 @@
   text-transform: uppercase;
 
   color: var(--logo-color-dark);
-}
-@media screen and (min-width: 1024px) {
-  .hotel-room-logo {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 62px;
     font-size: 64px;
     line-height: calc(69 / 64);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 72px;
   }
 }
 .hotel-room-title {
@@ -44,19 +57,21 @@
   letter-spacing: 0.05em;
 
   color: var(--secondary-text-color-theme-light);
-}
-@media screen and (min-width: 1024px) {
-  .hotel-room-title {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 16px;
     font-size: 30px;
     line-height: calc(34 / 30);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: calc(41 / 36);
   }
 }
 .hotel-room-title-upper {
   text-transform: uppercase;
 }
 .hotel-room-text {
-  margin-bottom: 32px;
   max-width: 258px;
   font-weight: 600;
   font-size: 12px;
@@ -64,17 +79,28 @@
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color-theme-light);
-}
-@media screen and (min-width: 1024px) {
-  .hotel-room-text {
+
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1024px) {
     max-width: 439px;
     font-size: 16px;
     line-height: calc(20 / 16);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 400px;
   }
 }
 @media screen and (min-width: 1024px) {
   .hotel-room-desc-section {
     display: flex;
+    margin-bottom: 176px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-room-desc-section {
+    margin-bottom: 188px;
   }
 }
 .image {
@@ -88,8 +114,9 @@
 }
 @media screen and (min-width: 1024px) {
   .hotel-room-img {
-    margin-left: 42px;
-    transform: translateY(-10%);
+    position: absolute;
+    left: 50%;
+    top: -32px;
   }
 }
 .amenities-img {
@@ -100,10 +127,19 @@
   margin-bottom: 20px;
   width: 32px;
   height: 32px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
 }
 .hotel-room-slider {
   margin-bottom: 20px;
   display: flex;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 1023.98px) {
   .hotel-room-slider {
@@ -112,32 +148,42 @@
 }
 .hotel-room-slider-item:first-child {
   margin-right: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-right: 40px;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .hotel-room-slider-item:first-child {
-    margin-right: 40px;
+  .hotel-list {
+    width: calc(50% - 37px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-list {
+    width: calc(50% - 7px);
   }
 }
 @media screen and (min-width: 1024px) {
   .hotel-room-details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
   .hotel-room-buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
-@media screen and (min-width: 1024px) {
-  .hotel-room-arrows {
+.hotel-arrow-list {
+  display: flex;
+  @media screen and (min-width: 1024px) {
     order: 1;
+    justify-content: flex-end;
   }
 }
-.hotel-arrow-icon + .hotel-arrow-icon {
+.hotel-arrow-item + .hotel-arrow-item {
   margin-left: 32px;
 }
 .hotel-room-btn {
@@ -155,6 +201,7 @@
   border: 2px solid var(--primary-bg-color-light);
   border-radius: 25px;
   cursor: pointer;
+  transition: background-color var(--animation), border var(--animation);
 }
 .hotel-room-btn:hover,
 .hotel-room-btn:focus {
@@ -162,10 +209,10 @@
   border: 2px solid var(--accent-color-theme-dark);
 }
 .hotel-room-btn-list {
-  text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .hotel-room-btn-list {
+  @media screen and (max-width: 1023.98px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1024px) {
     margin-left: auto;
   }
 }
