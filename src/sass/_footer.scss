@@ -3,20 +3,29 @@
 @import './base';
 @import './fonts';
 
+
+@media screen and (max-width: 1023.98) {
+    .footer-field {
+        width: 100%;
+    }
+}
+.footer-field {
+    background-color: var(--primary-bg-color-dark);
+    width: 100%;    
+}
 .ft {
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: space-around;
 
-    background-color: var(--primary-bg-color-dark);
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 30px;
 }
 .ft-title-cont {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
     justify-content: center;
     align-items: center;    
 }
