@@ -1,0 +1,98 @@
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.content {
+    width: 242px;
+    margin-left: 143px;
+    margin-right: -1px;
+}
+@media screen and (min-width: 768px) {
+    .content {
+        width: 419px;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+}
+.card_title {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    font-weight: 400;
+    color: var(--subtle-text-color);
+    margin-top: 18px;
+    margin-left: 41px;
+}
+.logo_card {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    color: var(--logo-color-dark);
+    margin-top: 6px;
+    margin-left: 114px;
+}
+.text_cadr_room {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+}
+.foto_room {
+    margin-top: 28px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+@media screen and (min-width: 768px){
+    .foto_room {
+        position: absolute;
+        top: -70px;
+    }
+}
+.text_card_hall {
+    max-width: 163px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: var(--accent-color-theme-light);
+    margin-top: 70px;
+}
+.hall {
+    margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+    .hall {
+        margin-top: 142px;
+    }
+}
+.foto_hall {
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+    .foto_hall {
+        width: 350px;
+    }
+}
+.slider {
+    display: flex;
+    margin-top: 32px;
+}
+.foto_slider {
+    margin-left: auto;
+    margin-right: 69px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}

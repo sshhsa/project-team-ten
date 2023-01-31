@@ -1,0 +1,197 @@
+.contacts-section {
+    background-color: var(--primary-bg-color-light);
+}
+.contacts {
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+
+.contacts-title {
+    margin-bottom: 12px;
+
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+    color: var(--logo-color-dark);
+    text-transform: uppercase;
+}
+
+.contacts h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light)
+}
+
+.rest-tel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+}
+.hotel-tel {
+    display: flex;
+}
+
+.call-rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 8px 11px;
+    height: 40px;
+
+    border: 0.5px solid var(--accent-color-theme-dark);
+    border-radius: 2px;
+    background-color: var(--primary-text-color-theme-dark);
+}
+.call-hotel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 260px;
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border: 0.5px solid var(--accent-color-theme-dark);
+    border-radius: 2px;
+    background-color: var(--primary-text-color-theme-dark);
+}
+.call-hotel a:not(:last-child) {
+    margin-right: 12px;
+}
+.tel-nr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #494848;
+
+}
+.mob-icon {
+    fill: var(--accent-color-theme-light);
+    margin-right: 8px;
+} 
+
+.contacts  span {
+    margin-right: 22px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-theme-light);
+}
+.location-cont {
+    border: 0.5px solid var( --accent-color-theme-dark);
+    border-radius: 2px;
+    background-color: var(--primary-text-color-theme-dark);
+
+    margin-top: 16px;
+    padding-left: 10px;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-start;
+    align-items: center;
+    width: 260px;
+
+}
+.location {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 10px 7px;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--logo-color-dark);
+    
+}
+
+.loc-icon {
+    fill: var(--accent-color-theme-dark);
+}
+.loc-map {
+    width: 100%;
+    margin-top: 32px;
+
+    border: 1px solid var(--secondary-text-color-theme-dark);
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px
+}
+
+// tablet screen styles //
+
+@media screen and (min-width: 1024px) {
+    .contacts-title {
+        font-size: 64px;
+        line-height: 1.1;  
+        margin-bottom: 8px;
+    }
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        padding-top: 70px;
+    }
+    .hotel-tel {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .rest-tel {
+        flex-wrap: wrap;
+        margin-top: 52px;
+        margin-bottom: 24px;
+        flex-direction: column;
+
+    }
+    .call-rest, .call-hotel {
+        margin-top: 8px;
+        margin-left: 0; 
+        
+    }
+    .call-rest {
+        width: 144px;
+        box-sizing: content-box;
+        padding: 0;
+    }
+    .location-cont {
+        margin-top: 48px;
+        margin-left: 0;
+    }
+    .loc-map {
+        height: auto;
+        width: 535px;
+        margin-top: 0;
+        margin-left: auto;
+    }
+}
+
+// desktop screen styles //
+
+@media screen and (min-width: 1280px) {
+    .contacts {
+        margin: 0;
+    }
+    .contacts {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .contacts-title {
+        margin-bottom: 16px;
+    }
+    .rest-tel {
+        margin-top: 40px;
+    }
+    .loc-map {
+        width: 634px;
+    }
+
+}

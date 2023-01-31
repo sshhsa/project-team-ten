@@ -36,39 +36,45 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../images/main/main_hero/main_hero_mob_414_2x.jpg);
+
+        url(../images/main/main_hero/main_hero_tab_1024_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        .hero-overlay {
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+            url(../images/main/main_hero/main_hero_tab_1024_2x.jpg);
+        }
+
     }
   }
 }
-@media screen and (min-width: 1024px) {
-  .hero-overlay {
-    height: 720px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main/main_hero/main_hero_tab_1024_1x.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main/main_hero/main_hero_tab_1024_2x.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-overlay {
-    max-width: 1280px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main/main_hero/main_hero_desk_1280_1x.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/main/main_hero/main_hero_desk_1280_2x.jpg);
-  }
+
+@media screen and (min-width:1280px) {
+    .hero-overlay {
+        max-width: 1280px;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/main_hero/main_hero_desk_1280_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        .hero-overlay {
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+            url(../images/main/main_hero/main_hero_desk_1280_2x.jpg);
+        }
+    }
+
 }
 .hero-adress {
   display: flex;
@@ -225,6 +231,10 @@
   .hero-social {
     display: none;
   }
+}
+.hero-social .item {
+    display: inline-block;
+    max-height: 24px;
 }
 .hero-social .item + .item {
   margin-left: 20px;
