@@ -1,0 +1,255 @@
+.hero {
+    background: #605B5B;
+    padding-top: 64px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+@media screen and (min-width:1024px) {
+    .hero {
+        position: relative;
+        padding-top: 188px;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero {
+        padding-top: 164px;
+        padding-bottom: 64px;
+    }
+}
+.hero-overlay {
+    display: block;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/main_hero/main_hero_mob_414_1x.jpg);
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-overlay {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+        url(../images/main/main_hero/main_hero_mob_414_2x.jpg);
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .hero-overlay {
+        height: 720px;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/main_hero/main_hero_tab_1024_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        .hero-overlay {
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+            url(../images/main/main_hero/main_hero_tab_1024_2x.jpg);
+        }
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-overlay {
+        max-width: 1280px;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/main/main_hero/main_hero_desk_1280_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        .hero-overlay {
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+            url(../images/main/main_hero/main_hero_desk_1280_2x.jpg);
+        }
+    }
+}
+.hero-adress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 210px;
+    height: 47px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+}
+@media screen and (min-width:1024px) {
+    .hero-adress {
+        position: absolute;
+        bottom: 64px;
+        margin-bottom: 0;
+        width: 285px;
+        height: 56px;
+    }
+}
+.hero-adress-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-color-theme-dark)
+}
+@media screen and (min-width:1024px) {
+    .hero-adress-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+.hero-adress-text {
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--contacts-color-theme-dark);
+}
+@media screen and (min-width:1024px) {
+    .hero-adress-text {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}
+.hero-title {
+    margin-bottom: 24px;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: var(--primary-text-color-theme-dark);
+    text-transform: uppercase;
+    text-indent: -0.3em;
+    direction: rtl;
+} 
+@media screen and (min-width:1024px) {
+    .hero-title{
+        margin-bottom: 16px;
+        font-size: 128px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-title{
+        margin-bottom: 32px;
+    }
+}
+.hero-subtitle {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-dark);
+}
+@media screen and (min-width:1024px) {
+    .hero-subtitle{
+        margin-bottom: 56px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-subtitle{
+        margin-bottom: 64px;
+    }
+}
+.hero-text {
+    margin-bottom: 113px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--primary-text-color-theme-dark);
+}
+@media screen and (min-width:1024px) {
+    .hero-text{
+        margin-bottom: 145px;
+        font-size: 36px;
+    }
+}
+.hero-buttons {
+    margin-bottom: 58px;
+}
+@media screen and (min-width:1024px) {
+    .hero-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        gap: 40px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-buttons {
+        margin-bottom: 0;
+        gap: 60px;
+    }
+}
+.hero-btn {
+    display: inline-block;
+    border: 2px solid var(--primary-text-color-theme-dark);
+    border-radius: 25px;
+    padding: 14px 24px;
+    min-width: 236px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-theme-dark);
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color var(--animation),
+    border-color var(--animation);
+
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--primary-text-color-theme-dark);
+    border-color: var(--accent-color-theme-dark);
+}
+.hero-buttons .item:not(:last-child) {
+    margin-bottom: 24px;
+}
+@media screen and (min-width:1024px) {
+    .hero-buttons .item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+.hero-social {
+    display: flex;
+    text-align: left;
+}
+@media screen and (min-width:1280px) {
+    .hero-social {
+        display:none;
+    }
+}
+.hero-social .item {
+    display: inline-block;
+    max-height: 24px;
+}
+.hero-social .item + .item {
+    margin-left: 20px;
+}
+.hero-social .icon {
+    fill: rgba(243, 198, 83, 0.7)
+}
