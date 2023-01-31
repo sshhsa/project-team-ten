@@ -17,6 +17,76 @@
         padding-bottom: 64px;
     }
 }
+.hero-overlay {
+    display: block;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant/rest_hero/rest_hero_mob_414_1x.jpg);
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-overlay {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+            ),
+        url(../images/restaurant/rest_hero/rest_hero_mob_414_2x.jpg);
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .hero-overlay {
+        height: 720px;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant/rest_hero/rest_hero_tab_1024_1x.jpg);
+    }
+}
+@media screen and (min-width:1024px) and 
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero-overlay {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant/rest_hero/rest_hero_tab_1024_2x.jpg);
+    }
+}
+@media screen and (min-width:1280px) {
+    .hero-overlay {
+        max-width: 1280px;
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant/rest_hero/rest_hero_desk_1280_1x.jpg);
+    }
+}
+@media screen and (min-width:1280px) and 
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero-overlay {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/restaurant/rest_hero/rest_hero_desk_1280_2x.jpg);
+    }
+}
 .hero-adress {
     display: flex;
     justify-content: center;
