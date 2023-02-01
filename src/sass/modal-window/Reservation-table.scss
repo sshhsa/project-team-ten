@@ -1,0 +1,483 @@
+.book-table-modal-window {
+    color: #F3C653;
+    background-color: #000000;
+    cursor: pointer;
+    padding: 18px 38px;
+
+    display: block;
+    min-width: 236px;
+    min-height: 48px;
+    margin: 0 auto;
+
+    margin-top: 32px;
+
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: color var(--animation), cursor var(--animation), background-color var(--animation);
+    text-transform: inherit;
+    border-radius: 25px;
+}
+
+.restaurant-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 80vh;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-top: 72px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity var(--animation) 200ms, transform var(--animation) 200ms;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.restaurant-modal-close-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+
+.backdrop {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transition: opacity var(--animation), visibility var(--animation);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .restaurant-modal {
+    transform: translate(-50%, -70%);
+    opacity: 0;
+
+}
+
+.your-reservation {
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-priority);
+
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-form-field {
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form-label {
+    display: block;
+
+    font-size: 14px;
+    color: #C79002;
+    line-height: 0.02em;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 54px;
+    padding-left: 12px;
+    padding-right: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #808080;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-bottom: 8px;
+    border: 1px solid #C79002;
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline var(--animation);
+}
+
+.contact-form-input:focus {
+    outline-color: var(--accent-color-theme-dark);
+    border: #C79002;
+
+}
+
+.contact-form-input:not(:placeholder-shown):required:valid {
+    outline-color: #C79002;
+
+}
+
+
+
+.contact-form-input:focus+.contact-form-icon {
+    fill: var(--accent-color-theme-dark);
+}
+
+.contact-form-input:not(:placeholder-shown)+.contact-form-icon {
+    fill: inherit;
+}
+body {
+    color: var(--color-text);
+}
+.container-grid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+}
+
+.restaurant-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 80vh;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-top: 72px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity var(--animation) 200ms, transform var(--animation) 200ms;
+    opacity: 1;
+
+}
+
+@media screen and (max-width: 1023.98px) {
+.restaurant-modal-close-btn-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .btn {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #000000;
+        max-width: 384px;
+
+    }
+}
+.your-reservation {
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-priority);
+
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-form-field {
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form-label {
+    display: block;
+
+    font-size: 14px;
+    color: #C79002;
+    line-height: 0.02em;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 54px;
+    padding-left: 12px;
+    padding-right: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #808080;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-bottom: 8px;
+    border: 1px solid #C79002;
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline var(--animation);
+}
+
+.contact-form-input:focus {
+    outline-color: var(--accent-color);
+    border: #C79002;
+
+}
+
+.contact-form-input:not(:placeholder-shown):required:valid {
+    outline-color: #C79002;
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 1023.98px) {
+    .restaurant-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 414px;
+        max-height: 80vh;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        background-color: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: opacity var(--animation) 200ms, transform var(--animation) 200ms;
+        opacity: 1;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .restaurant-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 712px;
+        max-height: 522px;
+        padding: 60px;
+        background-color: #FCFCFC;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        opacity: 1;
+        overflow-y: auto;
+    }
+       
+}
+
+.data-style {
+    stroke: none;
+}
+
+.restaurant-modal-close-btn-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #000000;
+
+}
+
+.restaurant-modal-close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+    transition: color var(--animation);
+
+}
+
+.your-reservation {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-form-field {
+    position: relative;
+    display: block;
+
+}
+
+.contact-form-label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    color: #C79002;
+}
+
+.contact-form-input {
+    width: 100%;
+    height: 54px;
+    padding-left: 12px;
+    padding-right: 17px;
+    color: #808080;
+    background-color: transparent;
+    border: 1px solid #C79002;
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline var(--animation);
+}
+
+.contact-form-input:focus {
+    outline-color: #C79002;
+    border: #C79002;
+
+}
+
+.contact-form-input:not(:placeholder-shown):required:valid {
+    outline-color: #C79002;
+
+}
+
+.contact-form-link {
+    color: var(--accent-color);
+}
+
+.contact-form-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.button-modal-menu {
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #F3C653;
+    text-decoration: none;
+    transition: color var(--animation), cursor var(--animation), box-shadow var(--animation);
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    margin-top: 65px;
+}
+
+.button-modal-menu:hover,
+.button-modal-menu:focus,
+.button-modal-menu:active {
+    color: #000000;
+    background-color: #F3C653;
+    cursor: pointer;
+
+}
+
+.option-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #808080;
+}
+
+@media screen and (min-width: 1024px) {
+    .button-modal-menu {
+        display: block;
+        padding: 16px 32px;
+        margin: 0 auto;
+        border-radius: 4px;
+        border: 1px solid #F3C653;
+        text-decoration: none;
+        transition: color var(--animation), cursor var(--animation), background-color var(--animation), box-shadow var(--animation);
+        color: #FFFFFF;
+        background-color: #000000;
+        font-family: inherit;
+        font-size: 24px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
+
+    .contact-form-label {
+        font-size: 16px;
+        font-family: inherit;
+        padding-left: 12px;
+    }
+
+    .modal-close-btn {
+        top: 16px;
+        right: 16px;
+    }
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+    .reservation-tabl {
+        display: block;
+        width: 288px;
+    }
+
+    .reservation-tabl-desk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .your-reservation {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,71 @@
+<div class="backdrop is-hidden" data-modal-table>
+    <div class="restaurant-modal">
+        <button type="button" class="restaurant-modal-close-btn" data-modal-close-table>
+            <svg class="restaurant-modal-close-btn-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="" name="reservation">
+
+            <strong class="your-reservation">забронювати столик</strong>
+            <div class="reservation-tabl-desk">
+                <div class="reservation-tabl">
+                    <div class="form-field" role="group">
+                        <input 
+                        class="contact-form-input" 
+                        type="text" 
+                        minlength="2" 
+                        name="name" 
+                        id="user_name"
+                            
+                        placeholder="Ваше ім'я" 
+                        required  
+                        size="45"
+                        pattern="[a-z]{2,8}"
+                        title="2 to 8 lowercase letters" />
+                        <label class="contact-form-field" for="user_name">
+                        </label>
+
+                        <span class="contact-form-label">На кого забронювати столик?</span>
+                        <input class="contact-form-input" type="tel" name="tel" id="user_phone" required
+                            placeholder="+38 (___) ___-__-__"
+                            title="+380**-***-**-**" />
+                        <label class="contact-form-field" for="user_phone">
+                        </label>
+
+                        <span class="contact-form-label">Номер телефону</span>
+
+                    </div>
+                </div>
+                <div class="reservation-tabl">
+                    <select id="individuals" name="individuals" class="contact-form-input">
+                        <option class="option-item" value="1">1</option>
+                        <option class="option-item" value="2" selected>2</option>
+                        <option class="option-item" value="3">3</option>
+                        <option class="option-item" value="4">4</option>
+                        <option class="option-item" value="5">5</option>
+                        <option class="option-item" value="6">6</option>
+                        <option class="option-item" value="7">7</option>
+                        <option class="option-item" value="8">8</option>
+                        <option class="option-item" value="9">9</option>
+                    </select>
+
+
+
+
+                    <label class="contact-form-field" for="user_order"></label>
+                    <span for="individuals" class="contact-form-label">Столик на яку кількість осіб?</span>
+                  
+                  <select id="data-order" name="data-order" class="contact-form-input">
+                        <option value="Сьогодні" selected>Сьогодні</option>
+                        <option value="Завтра">Завтра</option>
+
+                    </select>
+                    <label class="contact-form-field" for="user_order"></label>
+                    <span for="data-order" class="contact-form-label">На яку дату бронювати?</span>
+                </div>
+            </div>
+            <button type="submit" class="btn button-modal-menu">Оформити бронювання</button>
+    </div>
+    </form>
+</div>
