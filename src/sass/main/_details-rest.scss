@@ -1,6 +1,7 @@
 .details-rest {
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   max-width: 414px;
   height: 735px;
@@ -139,6 +140,7 @@
 
   .logo {
     margin-left: 231px;
+    margin-bottom: 16px;
 
     font-size: 64px;
     line-height: 1.08;
@@ -146,6 +148,7 @@
 
   .details-rest__title {
     margin-left: 231px;
+    margin-bottom: 8px;
 
     font-size: 24px;
     line-height: 1.2;
@@ -153,6 +156,7 @@
 
   .details-rest__text {
     margin-left: 231px;
+    margin-bottom: 40px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -166,9 +170,8 @@
     align-items: flex-end;
   }
 
-  .details-rest__img {
-    margin-left: 29px;
-    margin-bottom: 0px;
+  .details-rest__buttons-list {
+    margin-bottom: 70px;
   }
 }
 
@@ -208,5 +211,108 @@
 
   .details-rest__text {
     margin-left: 253px;
+  }
+}
+
+//---------- SLIDER ------------
+
+.details-rest__slider {
+  width: 100%;
+  margin-left: 25px;
+
+  .swiper {
+    .swiper-slide {
+      height: 270px !important;
+      width: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .swiper-button-left.swiper-button-disabled,
+  .swiper-button-right.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  .swiper-buttons {
+    padding: 0px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    &:hover .details-rest-icon,
+    &:focus .details-rest-icon {
+      fill: var(--accent-color-theme-dark);
+    }
+  }
+
+  .swiper-button-left {
+    margin-right: 33px;
+  }
+
+  .details-rest-icon {
+    background: none;
+    fill: #ffffff;
+
+    transition: fill var(--animation);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .details-rest__slider {
+    margin-bottom: 0px;
+    margin-left: 29px;
+
+    .swiper {
+      .swiper-slide {
+        width: 18.3% !important;
+        overflow: hidden;
+        transition: width 350ms ease-in;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      .swiper-buttons {
+        margin-top: 32px;
+        margin-bottom: 0px;
+      }
+
+      .swiper-slide-active {
+        width: 270px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .details-rest__slider {
+    margin-left: 32px;
+
+    .swiper {
+      .swiper-slide {
+        width: 270px !important;
+        height: 270px !important;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      .swiper-slide-next {
+        width: 162px !important;
+      }
+    }
   }
 }
