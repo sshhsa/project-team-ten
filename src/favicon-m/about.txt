@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Anek Telugu
+- Font Author: Copyright 2021 The Anek Project Authors (https://github.com/EkType/Anek)
+- Font Source: http://fonts.gstatic.com/s/anektelugu/v4/LhWLMVrUNvsddMtYGCx4FcVWOjlwE1WgXdoJ-5XHMl2DkooGK7i13y--oE2G2ep10_8.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
