@@ -5,36 +5,28 @@
   text-align: end;
 }
 .hotel-room-logo.three-adult {
+  margin-right: -0.3em;
   text-align: end;
 }
 .hotel-room-title.three-adult {
-  text-align: end;
+  @media screen and (max-width: 1023.98px) {
+    text-align: end;
+  }
 }
-
-// .hotel-room-text {
-//   max-width: 258px;
-//   font-weight: 600;
-//   font-size: 12px;
-//   line-height: calc(15 / 12);
-//   letter-spacing: 0.02em;
-
-//   color: var(--primary-text-color-theme-light);
-
-//   @media screen and (max-width: 1023.98px) {
-//     margin-bottom: 32px;
-//   }
-//   @media screen and (min-width: 1024px) {
-//     max-width: 439px;
-//     font-size: 16px;
-//     line-height: calc(20 / 16);
-//   }
-//   @media screen and (min-width: 1280px) {
-//     max-width: 400px;
-//   }
-// }
+.hotel-room-text.three-adult {
+  @media screen and (max-width: 1023.98px) {
+    margin-left: 83px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .hotel-room-desc-section.three-adult {
     justify-content: flex-end;
+    margin-right: 37px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hotel-room-desc-section.three-adult {
+    margin-right: 19px;
   }
 }
 .hotel-room-img.three-adult {
@@ -42,49 +34,15 @@
 }
 @media screen and (min-width: 1024px) {
   .hotel-room-img.three-adult {
-    left: 65px;
+    left: unset;
+    right: 50%;
   }
 }
-// .hotel-arrow-icon {
-//   display: inline-block;
-//   margin-bottom: 20px;
-//   width: 32px;
-//   height: 32px;
-//   @media screen and (min-width: 1024px) {
-//     margin-bottom: 0;
-//   }
-// }
-// .hotel-room-slider {
-//   margin-bottom: 20px;
-//   display: flex;
-//   @media screen and (min-width: 1024px) {
-//     margin-bottom: 32px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     margin-bottom: 40px;
-//   }
-// }
 @media screen and (max-width: 1023.98px) {
   .hotel-room-slider.three-adult {
     transform: translateX(38%);
   }
 }
-// .hotel-room-slider-item:first-child {
-//   margin-right: 16px;
-//   @media screen and (min-width: 1024px) {
-//     margin-right: 40px;
-//   }
-// }
-// @media screen and (min-width: 1024px) {
-//   .hotel-list {
-//     width: calc(50% - 37px);
-//   }
-// }
-// @media screen and (min-width: 1280px) {
-//   .hotel-list {
-//     width: calc(50% - 7px);
-//   }
-// }
 @media screen and (min-width: 1024px) {
   .hotel-room-details.three-adult {
     flex-direction: row-reverse;
@@ -94,6 +52,9 @@
   .hotel-room-buttons.three-adult {
     align-items: flex-start;
   }
+}
+.hotel-arrow-list.three-adult {
+  justify-content: flex-end;
 }
 .hotel-arrow-list.three-adult {
   @media screen and (min-width: 1024px) {
