@@ -48,8 +48,8 @@
 
     <div class="hotel-room-details three-adult">
       <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide hotel-room-slider three-adult">
+        <div class="swiper-wrapper hotel-room-slider three-adult">
+          <div class="swiper-slide">
             <div class="hotel-room-slider-item">
               <picture>
                 <source
@@ -130,12 +130,14 @@
         </div>
       </div>
 
-      <ul class="hotel-room-btn-list hotel-room-buttons three-adult hotel-list">
+      <ul class="hotel-room-btn-list hotel-room-buttons three-adult">
         <li class="hotel-room-btn-item">
           <a href="/src/room-hotel.html" class="hotel-room-btn">Детальніше</a>
         </li>
         <li class="hotel-room-btn-item">
-          <button class="hotel-room-btn">Переглянути ціни</button>
+          <button class="hotel-room-btn" type="button" data-modal-open-price>
+            Переглянути ціни
+          </button>
         </li>
       </ul>
     </div>
