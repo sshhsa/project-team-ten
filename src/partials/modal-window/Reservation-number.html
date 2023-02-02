@@ -1,0 +1,54 @@
+<div class="room-backdrop is-hidden" data-modal-room>
+    <div class="book-room-modal">
+      <button class="room-btn-close" type="button" data-modal-close-room>
+        <svg class="room-icon-modal">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+      </button>
+        <form class="book-room-form">
+            <h2 class="book-room-title">Забронювати номер</h2>
+        <div class="room-form-box-first">
+            <div>
+                    <input name="name" id="name" class="form-room-box-input" type="text" pattern="([a-zA-Zа-яА-Я]+)" title="Ім'я" placeholder="Ваше ім'я" required=""/>
+                    <label class="room-form-label" for="name">На кого забронювати номер?</label>
+            </div>
+            <div class="room-form-box">
+              <input name="phone" id="phone" class="form-room-box-input" type="tel" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+38 (___) ___-__-__" placeholder="+38 (___) ___-__-__" required=""/>
+              <label class="room-form-label" for="phone">Номер телефону</label>
+            </div>
+        </div>
+        <div class="room-form-box-second">
+            <div class="room-form-box">
+              <select class="form-room-box-input form-room-box-select" name="category-room" id="category-room">
+                <option value="Двомісний люкс" selected="">Двомісний люкс</option>
+                <option value="Тримісний номер">Трьохмісний номер</option>
+                <option value="Двохмісний номер">Двомісний номер</option>
+              </select>
+              <svg class="icon-book-room">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+              </svg>
+              <label class="room-form-label" for="category-room">Категорія номеру</label>
+            </div>
+        </div>
+        <div class="room-form-box-third">
+            <div class="room-form-box">
+                <input type="text" name="user-in-date" class="form-room-box-input" id="user-in-date" placeholder="Сьогодні" onfocus="(this.type='date')"  pattern="\d{1,2}/\d{1,2}/\d{4}"  required="">
+                <svg class="icon-book-room icon-book-room-padding">
+                    <use href="./images/icons.svg#icon-arrow-down"></use>
+                </svg>
+                <label class="room-form-label" for="user-in-date">Дата заїзду</label>
+            </div>
+            <div class="room-form-box-last">
+                    <input type="text" name="user-out-date" class="form-room-box-input" id="user-out-date" placeholder="Сьогодні" onfocus="(this.type='date')"  pattern="\d{1,2}/\d{1,2}/\d{4}"  required="">
+                        <svg class="icon-book-room icon-book-room-padding">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                    <label class="room-form-label" for="user-out-date">Дата виїзду</label>
+            </div>
+        </div>
+          <button class="book-room-button" type="submit">Оформити бронювання</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
