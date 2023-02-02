@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .hero {
     background: #605B5B;
     padding-top: 64px;
@@ -117,6 +120,7 @@
     }
 }
 .hero-adress-text {
+    text-align: left;
     margin-left: 8px;
     font-weight: 400;
     font-size: 12px;
@@ -174,10 +178,12 @@
 }
 .hero-text {
     margin-bottom: 113px;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 32px;
     line-height: 1.16;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: var(--primary-text-color-theme-dark);
 }
 @media screen and (min-width:1024px) {
