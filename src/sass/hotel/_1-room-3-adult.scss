@@ -38,11 +38,11 @@
     right: 50%;
   }
 }
-@media screen and (max-width: 1023.98px) {
-  .hotel-room-slider.three-adult {
-    transform: translateX(38%);
-  }
-}
+// @media screen and (max-width: 1023.98px) {
+//   .hotel-room-slider.three-adult {
+//     transform: translateX(38%);
+//   }
+// }
 @media screen and (min-width: 1024px) {
   .hotel-room-details.three-adult {
     flex-direction: row-reverse;
