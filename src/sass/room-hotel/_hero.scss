@@ -54,7 +54,6 @@
   border: 2px solid var(--primary-text-color-theme-dark);
   border-radius: 25px;
   padding: 14px 35px;
-  max-width: 232px;
   font-family: inherit;
   font-family: var(--primary-font);
   font-style: normal;
@@ -63,7 +62,7 @@
   line-height: 20px;
   letter-spacing: 0.02em;
 
-  color: var(--contacts-color-theme-dark);
+  color: var(--accent-color-theme-dark);
   background: rgba(0, 0, 0, 0.4);
   transition: background-color var(--animation), border-color var(--animation);
   & {
