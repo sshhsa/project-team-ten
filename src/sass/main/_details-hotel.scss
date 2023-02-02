@@ -85,11 +85,19 @@ screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
             font-weight: 600;
             line-height: 1.25;}
             
+            .icon-descript-list{display: flex;
+            margin-left: 276px;}
+            .icon-left{width: 32px;
+                height: 32px;
+                margin-bottom: 20px;
+                display: inline-block;}
+                .icon-list{fill: #fff;
+                margin-right: 32px;}
         .btn-hotel{width: 236px;
             letter-spacing: .02em;
             color: var(--accent-color-theme-dark);
             cursor: pointer;
-            transition: border-color var(--animation), background-color var(--animation);
+
             background-color: #0006;
             border: 2px solid #fff;
             border-radius: 25px;
