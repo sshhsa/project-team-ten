@@ -1,0 +1,59 @@
+<div class="price-backdrop is-hidden" data-modal-price>
+  <div class="price-modal">
+    <button class="price-modal-btn-close" type="button" data-modal-close-price>
+      <svg class="price-modal-icon-close">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="price-form">
+      <h2 class="price-form-title">Ціни на номер</h2>
+      <p class="price-form-room-type">Двомісний люкс</p>
+      <p class="price-form-type-label">Категорія номеру</p>
+      <div class="price-form-box-wrap">
+        <div class="room-form-box">
+          <select
+            class="price-form-box-input price-form-box-select"
+            name="nights"
+            id="nights"
+          >
+            <option value="1" selected="">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <svg class="price-icon-option">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+          <label class="price-form-label" for="nights">Кількість ночей</label>
+        </div>
+        <!-- <div class="price-form-box">
+          <input
+            name="nights"
+            id="nights"
+            class="price-form-box-input"
+            type="number"
+            min="1"
+            placeholder="1"
+            required=""
+          />
+          <label class="price-form-label" for="nights">Кількість ночей</label>
+        </div> -->
+        <div class="price-form-box">
+          <input
+            name="sum"
+            id="sum"
+            class="price-form-box-input"
+            type="number"
+            min="1"
+            placeholder="1000"
+            required=""
+          />
+          <label class="price-form-label" for="sum">грн</label>
+        </div>
+      </div>
+
+      <button class="price-form-button" type="submit">Забронювати номер</button>
+    </form>
+  </div>
+</div>
