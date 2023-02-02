@@ -93,30 +93,29 @@
     background-color: var(--primary-text-color-theme-dark);
 
     margin-top: 16px;
-    padding-left: 10px;
     display: flex;
     margin-left: auto;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: left;
     width: 260px;
-
+    height: 76px;
+    padding-left: 10px;
 }
 .location {
-    display: flex;
-    justify-content: flex-end;
-    padding: 8px 10px 7px;
-
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: var(--logo-color-dark);
-    
+
+    margin-left: 10px;
 }
 
 .loc-icon {
     fill: var(--accent-color-theme-dark);
+    width: 24px;
+    height: 24px;
 }
 .loc-map {
     width: 100%;
@@ -165,12 +164,20 @@
     .location-cont {
         margin-top: 48px;
         margin-left: 0;
+        width: 285px;
+        height: 56px;
     }
     .loc-map {
         height: auto;
         width: 535px;
         margin-top: 0;
         margin-left: auto;
+    }
+    .location br {
+        display: none;
+    }
+    .loc-icon {
+        width: 48px;
     }
 }
 
