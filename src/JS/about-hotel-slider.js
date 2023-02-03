@@ -15,7 +15,7 @@ function swiperSlider() {
         //   disableOnInteraction: false,
         // },
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 25,
         pagination: {
           el: pagination,
           clickable: true,
@@ -47,10 +47,7 @@ function swiperSlider() {
         // },
         breakpoints: {
           1023.98: {
-            spaceBetween: 34,
-          },
-          1279.98: {
-            spaceBetween: 87,
+            spaceBetween: 40,
           },
         },
       });
