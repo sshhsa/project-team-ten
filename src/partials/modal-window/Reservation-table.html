@@ -5,14 +5,14 @@
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <form class="" name="reservation">
+        <form class="form-reservation" name="reservation">
 
-            <strong class="your-reservation">забронювати столик</strong>
-            <div class="reservation-tabl-desk">
-                <div class="reservation-tabl">
-                    <div class="form-field" role="group">
-                        <input 
-                        class="contact-form-input" 
+            <strong id="" class="your-reservation">забронювати столик</strong>
+            <div class="restaurant-modal-group" role="group">
+                <div class="restaurant-modal-group-tabl">
+            <div class="form-reservation-item">
+            <input 
+                        class="form-reservation-input" 
                         type="text" 
                         minlength="2" 
                         name="name" 
@@ -23,22 +23,24 @@
                         size="45"
                         pattern="[a-z]{2,8}"
                         title="2 to 8 lowercase letters" />
-                        <label class="contact-form-field" for="user_name">
+                        <label class="form-reservation-field" for="user_name">
+                            На кого забронювати столик?
                         </label>
+                        </div>
 
-                        <span class="contact-form-label">На кого забронювати столик?</span>
-                        <input class="contact-form-input" type="tel" name="tel" id="user_phone" required
+                        
+                        <div class="form-reservation-item">
+                            <input class="form-reservation-input" type="tel" name="tel" id="user_phone" required
                             placeholder="+38 (___) ___-__-__"
                             title="+380**-***-**-**" />
-                        <label class="contact-form-field" for="user_phone">
-                        </label>
-
-                        <span class="contact-form-label">Номер телефону</span>
-
-                    </div>
-                </div>
-                <div class="reservation-tabl">
-                    <select id="individuals" name="individuals" class="contact-form-input">
+                                <label class="form-reservation-field" for="user_phone">
+                                    Номер телефону
+                                </label>
+                        </div>
+                        </div>
+                   <div class="form-reservation-table">
+            <div class="form-reservation-item form-reservation-position">
+                    <select id="individuals" name="individuals" class="form-reservation-input" id="user_order">
                         <option class="option-item" value="1">1</option>
                         <option class="option-item" value="2" selected>2</option>
                         <option class="option-item" value="3">3</option>
@@ -50,22 +52,34 @@
                         <option class="option-item" value="9">9</option>
                     </select>
 
+                        <svg class="form-reservation-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        <label class="form-reservation-field" for="individuals">
+                            Столик на яку кількість осіб?
+                        </label>
+</div>
 
-
-
-                    <label class="contact-form-field" for="user_order"></label>
-                    <span for="individuals" class="contact-form-label">Столик на яку кількість осіб?</span>
-                  
-                  <select id="data-order" name="data-order" class="contact-form-input">
+                   
+                
+                <div class="form-reservation-item form-reservation-position">
+                    <select id="data-order" name="data-order" class="form-reservation-input style-margin">
                         <option value="Сьогодні" selected>Сьогодні</option>
                         <option value="Завтра">Завтра</option>
 
                     </select>
-                    <label class="contact-form-field" for="user_order"></label>
-                    <span for="data-order" class="contact-form-label">На яку дату бронювати?</span>
+                    <svg class="form-reservation-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-arrow-down"></use>
+                    </svg>
+                    <label class="form-reservation-field" for="data-order">
+                        На яку дату бронювати?
+                    </label>
+                    </div>
                 </div>
+                   
+               
             </div>
             <button type="submit" class="btn button-modal-menu">Оформити бронювання</button>
-    </div>
+    
     </form>
 </div>
