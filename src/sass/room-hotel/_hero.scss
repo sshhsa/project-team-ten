@@ -210,7 +210,7 @@
 }
 
 .slider-icon-room-hotel-arrow {
-  fill: var(--primary-text-color-theme-dark);
+  fill: var(--accent-color-theme-dark);
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -220,7 +220,7 @@
 
 .slider-item-room-hotel:hover .slider-icon-room-hotel-arrow,
 .slider-item-room-hotel:hover .slider-icon-room-hotel-arrow {
-  fill: var(--accent-color-theme-dark);
+  fill: var(--primary-text-color-theme-dark);
 }
 
 .social-list-room-hotel {
@@ -243,7 +243,7 @@
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.05em;
   text-align-last: left;
@@ -267,6 +267,17 @@
   text-transform: uppercase;
 }
 
+.title-luxe-room-hotel {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align-last: left;
+  color: var(--primary-text-color-theme-dark);
+}
+
 .hero-meta-text-room-hotel {
   font-family: var(--primary-font);
   font-style: normal;
@@ -277,10 +288,9 @@
   text-align: left;
   color: var(--primary-text-color-theme-dark);
   margin-bottom: 17px;
+  width: 340px;
+
   @media screen and (min-width: 414px) {
     max-width: 325px;
-  }
-  @media screen and (min-width: 1024px) {
-    max-width: 400px;
   }
 }
