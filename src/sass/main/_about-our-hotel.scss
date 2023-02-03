@@ -9,7 +9,7 @@
 .content {
 display: block;
     width: 242px;
-    margin-left: 143px;
+    margin-left: auto;
     margin-right: 0px;
 }
 @media screen and (min-width: 1024px) {
@@ -135,7 +135,7 @@ display: block;
 }
 .text_card_hall {
     display: block;
-    width: 163px;
+    max-width: 163px;
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 600;
@@ -156,7 +156,6 @@ display: block;
 @media screen and (min-width: 1280px) {
     .text_card_hall {
         margin-top: 99px;
-        
     }
 }
 
