@@ -1,0 +1,241 @@
+.room-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: var(--animation);
+  z-index: 999999;
+}
+
+.room-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.book-room-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 780px;
+  background-color: var(--primary-bg-color-light);
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--accent-color-theme-dark);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 414px) {
+  .book-room-modal {
+    width: 414px;
+    height: 780px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .book-room-modal {
+    width: 712px;
+    height: 638px;
+  }
+}
+.room-btn-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.room-icon-modal {
+  width: 24px;
+  height: 24px;
+  stroke: #000000;
+  transition: stroke var(--animation);
+}
+
+.room-icon-modal:hover, .icon-modal:active {
+  stroke: var(--accent-color-theme-dark);
+}
+
+.book-room-form {
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .book-room-form {
+    padding: 60px;
+  }
+}
+.book-room-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .book-room-title {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+.form-room-box-input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid var(--accent-color-theme-light);
+  background-color: transparent;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #808080;
+  padding-left: 12px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: border var(--animation);
+}
+
+.form-room-box-input:hover, .form-room-box-input:focus {
+  border: 2px solid var(--accent-color-theme-dark);
+}
+
+@media screen and (min-width: 1024px) {
+  .form-room-box-input {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.form-room-box-select {
+  height: 64px;
+}
+
+.room-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color-theme-light);
+  margin-left: 12px;
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .room-form-label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.book-room-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color-theme-dark);
+  width: 384px;
+  height: 64px;
+  background-color: #000000;
+  border: 1px solid var(--accent-color-theme-dark);
+  border-radius: 2px;
+  padding: 20px 42px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 40px;
+  transition: background-color var(--animation), border-color var(--animation);
+}
+
+@media screen and (max-width: 413.98px) {
+  .book-room-button {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .book-room-button {
+    width: 592px;
+  }
+}
+.book-room-button:hover, .book-room-button:active {
+  background-color: var(--accent-color-theme-dark);
+}
+
+.room-form-box {
+  margin-top: 20px;
+  position: relative;
+}
+
+.room-form-box-last {
+  margin-top: 17px;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .room-form-box, .room-form-box-last {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .room-form-box-first {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .room-form-box-second {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 28px;
+  }
+  .room-form-box-third {
+    display: flex;
+    gap: 16px;
+  }
+}
+.icon-book-room {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+  pointer-events: none;
+  fill: var(--accent-color-theme-light);
+}
+
+@media screen and (max-width: 1023.98px) {
+  .icon-book-room-padding {
+    top: 15px;
+    right: 15px;
+  }
+}
+/* 
+date */
+.room-form-box input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100px;
+  cursor: pointer;
+}
+
+.room-form-box-last input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100px;
+  cursor: pointer;
+}/*# sourceMappingURL=Reservation-number.css.map */
