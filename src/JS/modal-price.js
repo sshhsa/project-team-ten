@@ -1,13 +1,18 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-price]'),
-    closeModalBtn: document.querySelector('[data-modal-close-price]'),
+    openModalBtns: document.querySelectorAll('[data-modal-open-price]'),
+    closeModalBtns: document.querySelectorAll('[data-modal-close-price]'),
     modal: document.querySelector('[data-modal-price]'),
   };
-  refs.openModalBtn.addEventListener('click', toggleModalPrice);
-  refs.closeModalBtn.addEventListener('click', toggleModalPrice);
 
-  function toggleModalPrice() {
+  refs.openModalBtns.forEach(element => {
+    element.addEventListener('click', toggleModal);
+  });
+  refs.closeModalBtns.forEach(element => {
+    element.addEventListener('click', toggleModal);
+  });
+
+  function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
 })();

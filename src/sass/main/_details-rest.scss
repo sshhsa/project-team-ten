@@ -75,7 +75,9 @@
 }
 
 .details-rest__buttons-list {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .point:not(:last-child) {
     margin-bottom: 16;
@@ -84,6 +86,8 @@
 
 .details-rest__button {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 14px;
   padding-bottom: 14px;
