@@ -1,5 +1,12 @@
 // ------------------------------ADAPTIVE  FOR MOBILE
 @media screen and (max-width: 1023.98px) {
+  .text_detalies_hotel {
+    width: 243px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .details-hotel {
     .container {
       padding: 0px;
@@ -46,24 +53,23 @@
   line-height: 1.08;
   font-family: var(--logo-font);
   margin-bottom: 12px;
-  margin-left: 158px;
+  text-align: right;
 }
 
-.section-name {
+.name_detalies_hotel {
   color: var(--primary-text-color-theme-dark);
   letter-spacing: 0.02em;
   margin-bottom: 20px;
-  margin-left: 216px;
   font-size: 20px;
   line-height: 1.2;
+
+  text-align: right;
 }
 
 .description-hotel {
   width: 243px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-dark);
-  margin-left: 47px;
-  margin-bottom: 48px;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.25;
@@ -112,6 +118,13 @@
 
 //-------------------------------------- ADAPTIVE  FOR TABLET
 @media screen and (min-width: 1024px) {
+  .text_detalies_hotel {
+    width: 595px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: 230px;
+  }
+
   .details-hotel__position-box {
     display: flex;
     align-items: flex-end;
@@ -148,24 +161,29 @@
   .name-hotel {
     font-size: 64px;
     line-height: 1.08;
+
     margin-bottom: 16px;
-    margin-left: 544px;
+    text-align: right;
   }
 
-  .section-name {
-    margin-right: 278px;
+  .name_detalies_hotel {
+    margin: 0;
+    margin-left: auto;
     margin-bottom: 8px;
-    margin-left: 659px;
+
     font-size: 24px;
     line-height: 1.2;
+
+    width: 100px;
   }
 
   .description-hotel {
     width: 549px;
-    margin-left: 197px;
-    margin-bottom: 40px;
     font-size: 16px;
     line-height: 1.25;
+
+    margin: 0;
+    margin-left: auto;
   }
 
   .сhange-position-box {
@@ -183,6 +201,13 @@
 
 // ---------------------------------ADAPTIVE FOR  DESKTOP
 @media screen and (min-width: 1280px) {
+  .text_detalies_hotel {
+    width: 595px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .details-hotel {
     padding-top: 48px;
     padding-bottom: 96px;
@@ -215,20 +240,25 @@
     font-size: 64px;
     line-height: 1.08;
     margin-bottom: 16px;
-    margin-left: 740px;
+    text-align: right;
   }
 
-  .section-name {
+  .name_detalies_hotel {
+    display: block;
+
     margin-bottom: 8px;
-    margin-left: 855px;
     font-size: 24px;
     line-height: 1.2;
+
+    width: 105px;
+
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: 8px;
   }
 
   .description-hotel {
     width: 595px;
-    margin-left: 347px;
-    margin-bottom: 40px;
     font-size: 16px;
     line-height: 1.25;
   }
