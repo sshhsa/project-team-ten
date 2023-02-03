@@ -21,20 +21,22 @@
     opacity: 0;
 
 }
+
 .restaurant-modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     max-height: 80vh;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: opacity var(--animation) 200ms, transform var(--animation) 200ms;
     opacity: 1;
-    
+
 }
+
 @media screen and (max-width: 1023.98px) {
     .restaurant-modal {
 
@@ -47,98 +49,7 @@
 
     }
 }
-@media screen and (min-width: 1024px)  {
-    .restaurant-modal {
 
-        width: 712px;
-            max-height: 522px;
-            padding: 60px;
-
-    }
-      
-    .restaurant-modal-group-tabl {
-        display: block;
-            width: 288px;
-    }
-    .form-reservation-input {
-        width: 288px;
-    }
-}
-.button-modal-menu {
-    display: block;
-    padding: 16px 32px;
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid #F3C653;
-    text-decoration: none;
-    transition: color var(--animation), cursor var(--animation), box-shadow var(--animation);
-    color: #FFFFFF;
-    background-color: #000000;
-    font-family: inherit;
-    font-size: 20px;
-    line-height: 1.19;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    text-transform: uppercase;
-    
-}
-.button-modal-menu:hover,
-.button-modal-menu:focus,
-.button-modal-menu:active {
-    color: #000000;
-    background-color: #F3C653;
-    cursor: pointer;
-
-}
-.restaurant-modal-close-btn {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 16px;
-    right: 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-
-}
-.restaurant-modal-close-btn-icon {
-    width: 24px;
-    height: 24px;
-    stroke: #000000;
-
-}
-.restaurant-modal-close-btn {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-
-    cursor: pointer;
-    transition: color var(--animation);
-
-}
-.restaurant-modal-close-btn-icon:hover {
-    stroke: #F3C653;
-    transition: stroke var(--animation);
-}
-.your-reservation {
-    display: block;
-    margin-bottom: 40px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1;
-    letter-spacing: 0.05em;
-    color: #000000;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-}
 .form-reservation-input {
     width: 100%;
     height: 54px;
@@ -156,34 +67,162 @@
     color: #808080;
     transition: outline var(--animation);
 }
+
+@media screen and (min-width: 1024px) {
+    .restaurant-modal {
+
+        width: 712px;
+        max-height: 522px;
+        padding: 60px;
+
+    }
+
+    .restaurant-modal-group-tabl {
+        display: block;
+        width: 288px;
+    }
+
+    .form-reservation-input {
+        width: 288px;
+        height: 64px;
+        font-size: 24px;
+    }
+}
+
+.button-modal-menu {
+    display: block;
+
+    padding: 16px 32px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #F3C653;
+    text-decoration: none;
+    transition: color var(--animation), cursor var(--animation), background-color var(--animation);
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.button-modal-menu:hover,
+.button-modal-menu:focus,
+.button-modal-menu:active {
+    color: #000000;
+    background-color: #F3C653;
+    cursor: pointer;
+
+}
+
+.restaurant-modal-close-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.restaurant-modal-close-btn-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #000000;
+
+}
+
+.restaurant-modal-close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+    transition: color var(--animation);
+
+}
+
+.restaurant-modal-close-btn-icon:hover {
+    stroke: #F3C653;
+    transition: stroke var(--animation);
+}
+
+.your-reservation {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .restaurant-modal-group {
     margin-bottom: 40px;
 
 }
+
+.form-reservation-field {
+    display: block;
+
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-top: 8px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+    color: var(--accent-color-theme-light);
+}
+
 @media screen and (min-width: 1024px) {
     .your-reservation {
         font-size: 40px;
     }
-    .button-modal-menu { 
+
+    .button-modal-menu {
         width: 100%;
         font-size: 24px;
+        min-height: 64px;
     }
-.form-reservation-table {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.restaurant-modal-group {
 
-    display: flex;
-    justify-content: space-between;
-}
-.form-reservation-input {
-    width: 288px;
-}
-.restaurant-modal-group {
-    margin-bottom: 20px;
-}
+    .form-reservation-table {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .restaurant-modal-group {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-reservation-input {
+        width: 288px;
+    }
+
+    .restaurant-modal-group {
+        margin-bottom: 20px;
+    }
+
+    .form-reservation-field {
+        font-size: 16px;
+    }
 }
 
 .form-reservation-position {
@@ -194,30 +233,21 @@
     outline-color: var(--accent-color-theme-dark);
     box-shadow: 0 0 0 2px rgba(230, 169, 39, 0.25);
 }
+
 .form-reservation-input:not(:placeholder-shown):required:valid {
     outline-color: rgb(82, 185, 233);
     box-shadow: unset;
 }
+
 .form-reservation-input:not(:placeholder-shown):required:invalid {
     outline-color: rgb(236, 112, 112);
     box-shadow: unset;
 }
-.form-reservation-field {
-    display: block;
-   
-        margin-bottom: 20px;
-        margin-left: 12px;
-        margin-top: 8px;
-        font-family: 500;
-        line-height: 1.2;
-        font-size: 14px;
-        color: var(--accent-color-theme-light);
-}
+
 .form-reservation-icon {
     position: absolute;
     right: 15px;
-    top:15px;
+    top: 15px;
     fill: var(--accent-color-theme-light);
     cursor: pointer;
 }
-
