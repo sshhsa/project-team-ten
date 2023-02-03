@@ -1,13 +1,10 @@
-img {
-  max-width: 100%;
-}
 .swiper {
   @media screen and (max-width: 1023.98px) {
-    width: 428px;
+    width: 424px;
     height: 214px;
   }
   @media screen and (min-width: 1024px) {
-    width: 472px;
+    width: 468px;
     height: 226px;
   }
   @media screen and (min-width: 1280px) {
@@ -38,6 +35,12 @@ img {
 }
 .swiper {
   margin: 0;
+  @media screen and (max-width: 1023.98px) {
+    margin-left: -134px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-right: -40px;
+  }
 }
 .two-adults-lux-section {
   position: relative;
@@ -138,7 +141,8 @@ img {
     margin-bottom: 188px;
   }
 }
-.image {
+.hotel-room-image {
+  max-width: 100%;
   background-color: #dadada;
   // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -163,9 +167,14 @@ img {
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: fill var(--animation);
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
   }
+}
+.hotel-arrow-icon:hover,
+.hotel-arrow-icon:focus {
+  fill: var(--accent-color-theme-dark);
 }
 .hotel-room-slider {
   margin-bottom: 20px;
@@ -175,14 +184,6 @@ img {
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 1023.98px) {
-  // .swiper-slide.hotel-room-slider {
-  //   transform: translateX(-38%);
-  // }
-  .hotel-room-slider {
-    transform: translateX(-38%);
   }
 }
 // .hotel-room-slider-item {
