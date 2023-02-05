@@ -21,7 +21,6 @@ html {
   }
 }
 .hero-overlay {
-  max-width: 414px;
   height: 740px;
   margin-left: auto;
   margin-right: auto;
@@ -45,7 +44,6 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .hero-overlay {
-    max-width: 1024px;
     height: 720px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant/rest_hero/rest_hero_tab_1024_1x.jpg);

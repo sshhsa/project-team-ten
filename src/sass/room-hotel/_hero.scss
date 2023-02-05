@@ -2,7 +2,6 @@
   display: flex;
   //   flex-direction: column;
   align-items: flex-end;
-  max-width: 414px;
 
   position: relative;
 
@@ -24,7 +23,6 @@
   }
   @media screen and (min-width: 1024px) {
     background-image: url(/src/images/room/room_hero/room_hero_tab_1024_1x.jpg);
-    max-width: 1024px;
     height: 720px;
     @media (min-divice-pixel-ratio: 2),
       (min-resolution: 192dpi),
